@@ -11,7 +11,7 @@ export class CreateThoughtComponent implements OnInit {
     id: 1,
     conteudo: 'Learn Angular',
     autoria: 'Dev',
-    modelo: true
+    modelo: 'modelo1'
   };
 
   constructor(){}

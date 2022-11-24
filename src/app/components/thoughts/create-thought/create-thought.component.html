@@ -5,17 +5,17 @@
   <form>
     <label for="pensamento">Pensamento</label>
     <input type="textarea" class="input" id="pensamento"
-     name="pensamento" placeholder="Digite o pensamento" [value]="pensamento.conteudo">
+     name="pensamento" placeholder="Digite o pensamento" [(ngModel)]="pensamento.conteudo">
 
     <label for="autoria">Autoria ou fonte</label>
     <input type="text" class="input" id="autoria"
-     name="autoria" placeholder="Digite a autoria ou fonte" [value]="pensamento.autoria">
+     name="autoria" placeholder="Digite a autoria ou fonte" [(ngModel)]="pensamento.autoria">
 
      <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
-          <input type="radio" value="modelo1" name="modelo-card" id="modelo1" [value]="pensamento.modelo">
+          <input type="radio" value="modelo1" name="modelo-card" id="modelo1" [(ngModel)]="pensamento.modelo">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="radio-modelo">
         <label for="modelo2">
-          <input type="radio" value="modelo2" name="modelo-card" id="modelo2">
+          <input type="radio" value="modelo2" name="modelo-card" id="modelo2" [(ngModel)]="pensamento.modelo">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -45,7 +45,7 @@
       </div>
       <div class="radio-modelo">
         <label for="modelo3">
-          <input type="radio" value="modelo3" name="modelo-card" id="modelo3">
+          <input type="radio" value="modelo3" name="modelo-card" id="modelo3" [(ngModel)]="pensamento.modelo">
           <div class="custom-radio">
             <span></span>
           </div>
