@@ -19,4 +19,12 @@ export class CreateThoughtComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+  public criarPensamento() {
+    console.log("PASSEI AQUI");
+  }
+
+  public cancelarPensamento() {
+    console.log("CANCELANDO");
+  }
 }
