@@ -7,10 +7,20 @@ import { Component } from '@angular/core';
 })
 export class ThoughtsListComponent {
   listaPensamento = [
-  //   {
-  //   conteudo: 'Angular',
-  //   autoria: 'eu',
-  //   modelo: 'modelo3'
-  // }
+  {
+    conteudo: 'Angular',
+    autoria: 'eu',
+    modelo: 'modelo3'
+  },
+  {
+    conteudo: 'Angular 14',
+    autoria: 'eu',
+    modelo: 'modelo2'
+  },
+  {
+    conteudo: 'teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres',
+    autoria: 'eu',
+    modelo: 'modelo3'
+  },
 ];
 }
