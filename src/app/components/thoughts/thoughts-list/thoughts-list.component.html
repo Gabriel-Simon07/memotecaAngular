@@ -3,9 +3,14 @@
     <h2 class="ff-inter">Meu mural</h2>
     <button class="botao" routerLink="/createThought">Adicionar pensamento</button>
   </header>
-  <div class="mural">
+  <div class="mural" *ngIf="listaPensamento.length > 0; else semPensamentos">
     <div *ngFor="let pensamento of listaPensamento">
       <app-thought-card [pensamento]="pensamento"></app-thought-card>
     </div>
   </div>
 </section>
+<ng-template #semPensamentos>
+  <div class="ff-inter sem-pensamentos">
+    <p>Ainda não há pensamentos inseridos</p>
+  </div>
+</ng-template>

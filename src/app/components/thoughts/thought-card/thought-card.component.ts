@@ -14,9 +14,9 @@ export class ThoughtCardComponent implements OnInit {
   constructor() {}
 
   @Input() pensamento = {
-    conteudo: 'Angular',
-    autoria: 'eu',
-    modelo: 'modelo3'
+    conteudo: '',
+    autoria: '',
+    modelo: ''
   };
 
 }
