@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./thoughts-list.component.scss']
 })
 export class ThoughtsListComponent {
-
+  listaPensamento = [{
+    conteudo: 'Angular',
+    autoria: 'eu',
+    modelo: 'modelo3'
+  }];
 }
