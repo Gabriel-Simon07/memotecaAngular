@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Thought } from '../../thoughts.interface';
 
 @Component({
   selector: 'app-create-thought',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateThoughtComponent implements OnInit {
 
-  pensamento = {
+  pensamento: Thought = {
     id: 1,
     conteudo: 'Learn Angular',
     autoria: 'Dev',
