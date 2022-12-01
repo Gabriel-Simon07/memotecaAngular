@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ThoughtService } from './../thought.service';
+import { Component, OnInit } from '@angular/core';
 import { Thought } from '../../thoughts.interface';
 
 @Component({
@@ -6,25 +7,12 @@ import { Thought } from '../../thoughts.interface';
   templateUrl: './thoughts-list.component.html',
   styleUrls: ['./thoughts-list.component.scss']
 })
-export class ThoughtsListComponent {
-  listaPensamento: Thought[] = [
-  {
-    id: 1,
-    conteudo: 'Angular',
-    autoria: 'eu',
-    modelo: 'modelo3'
-  },
-  {
-    id: 3,
-    conteudo: 'Angular 14',
-    autoria: 'eu',
-    modelo: 'modelo2'
-  },
-  {
-    id: 2,
-    conteudo: 'teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres, teste de comprimento de caracteres',
-    autoria: 'eu',
-    modelo: 'modelo3'
-  },
-];
+export class ThoughtsListComponent implements OnInit{
+  listaPensamento: Thought[] = [];
+
+  constructor(private thoughtService: ThoughtService) {}
+
+  ngOnInit(): void {
+    this.thoughtService.listar().subscribe();
+  }
 }
