@@ -13,6 +13,8 @@ export class ThoughtsListComponent implements OnInit{
   constructor(private thoughtService: ThoughtService) {}
 
   ngOnInit(): void {
-    this.thoughtService.listar().subscribe();
+    this.thoughtService.listar().subscribe((listThoughts) => {
+      this.listaPensamento = listThoughts;
+    });
   }
 }

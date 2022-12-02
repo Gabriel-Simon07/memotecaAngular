@@ -12,4 +12,8 @@ export class ThoughtService {
   listar() {
     return this.http.get<Thought[]>(this.API);
   }
+
+  criar(thought: Thought) {
+    return this.http.post<Thought>(this.API, thought);
+  }
 }

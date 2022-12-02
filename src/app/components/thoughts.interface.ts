@@ -1,5 +1,5 @@
 export interface Thought {
-  id: number;
+  id?: number;
   autoria: string
   modelo: string
   conteudo: string
