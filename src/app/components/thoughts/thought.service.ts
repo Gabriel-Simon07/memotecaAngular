@@ -24,4 +24,8 @@ export class ThoughtService {
   pegar(id: number) {
     return this.http.get(`${this.API}/${id}`);
   }
+
+  editar(thought: Thought) {
+    return this.http.put(`${this.API}/${thought.id}`, thought);
+  }
 }
