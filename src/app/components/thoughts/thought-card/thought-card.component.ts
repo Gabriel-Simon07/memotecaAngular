@@ -1,3 +1,4 @@
+import { Thought } from './../../thoughts.interface';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -13,7 +14,8 @@ export class ThoughtCardComponent implements OnInit {
 
   constructor() {}
 
-  @Input() pensamento = {
+  @Input() pensamento: Thought = {
+    id: 0,
     conteudo: '',
     autoria: '',
     modelo: ''

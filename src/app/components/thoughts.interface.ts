@@ -1,6 +1,6 @@
 export interface Thought {
   id?: number;
-  autoria: string
-  modelo: string
-  conteudo: string
+  autoria: string;
+  modelo: string;
+  conteudo: string;
 }

@@ -16,4 +16,12 @@ export class ThoughtService {
   criar(thought: Thought) {
     return this.http.post<Thought>(this.API, thought);
   }
+
+  excluir(id: number) {
+    return this.http.delete(`${this.API}/${id}`);
+  }
+
+  pegar(id: number) {
+    return this.http.get(`${this.API}/${id}`);
+  }
 }
